@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-rose-empolvado: #F6E7E7;
+    --color-crema-calido: #FBF7F2;
+    --color-lila: #B9A3D6;
+    --color-morado-cad: #7B5EA7;
+    --color-azul-acuarela: #4A6FA5;
+    --color-gris-texto: #4B4453;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Nunito', 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #4B4453;
+    background-color: #FBF7F2;
+  }
+}
+
+.font-serif-title {
+  font-family: 'Lora', 'Playfair Display', Georgia, serif;
+}
+
+.font-display {
+  font-family: 'Playfair Display', 'Lora', Georgia, serif;
+}
+
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.font-body {
+  font-family: 'Nunito', 'Quicksand', sans-serif;
+}
+
+/* Subtle gentle floating animation for butterflies */
+@keyframes floatGentle {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes candleFlicker {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    opacity: 0.95;
+  }
+  25% {
+    transform: scale(1.04) translateY(-1px);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.97) translateY(0.5px);
+    opacity: 0.88;
+  }
+  75% {
+    transform: scale(1.02) translateY(-0.5px);
+    opacity: 0.96;
+  }
+}
+
+.animate-float-gentle {
+  animation: floatGentle 5s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: floatGentle 6s ease-in-out 2s infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+.animate-candle-flicker {
+  animation: candleFlicker 3s ease-in-out infinite;
+}
+
+/* Watercolor edge mask effect */
+.watercolor-blur {
+  filter: drop-shadow(0 15px 30px rgba(123, 94, 167, 0.08));
+}

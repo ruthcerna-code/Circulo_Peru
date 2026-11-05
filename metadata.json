@@ -1,0 +1,6 @@
+{
+  "name": "CAD Perú - Círculo de Apoyo ante el Duelo Gestacional y Perinatal",
+  "description": "Red de familias en el Perú que acompaña con amor y sin juzgar a madres y padres tras la pérdida de un bebé gestacional, perinatal o neonatal.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
